@@ -14,7 +14,7 @@ target. This plugin carries that contract, the authoring rules, and a recipe lib
 Clone it once, then point Claude Code at the clone:
 
 ```
-git clone <this repo> polaris-automation
+git clone https://github.com/rogers-group-inc/polaris-automation.git
 claude --plugin-dir <path-to-clone>/polaris-automation
 ```
 
