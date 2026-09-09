@@ -1,0 +1,7 @@
+{
+  "name": "polaris-automation",
+  "displayName": "Polaris automation scripts",
+  "version": "0.1.0",
+  "description": "Generates ready-to-paste scripts for Polaris automation script actions: the server and agent execution contracts, the {token} args vocabulary and its single-argv trap, the authoring rules that keep a script idempotent and secret-free, and a recipe library (bash, python3, PowerShell) with the exact registry settings and args template to save alongside each one.",
+  "author": { "name": "Rogers Group — David Moore" }
+}

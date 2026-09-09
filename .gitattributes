@@ -1,0 +1,4 @@
+# Normalize to LF in the repo and in the working tree. The reference files
+# carry shell, Python and PowerShell bodies meant to be copied out verbatim;
+# a CRLF flip would rewrite whole files in a diff and hide the real change.
+* text=auto eol=lf
