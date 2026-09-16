@@ -107,6 +107,7 @@ Single-brace `{token}`. Not `{{ }}`.
 | `{severity.color}` | hex colour for the severity |
 | `{time}` | trigger time, ISO-8601 |
 | `{time.local}` | trigger time in the server's timezone, human-readable |
+| `{time.zone}` | the timezone that time is rendered in, named in full — e.g. `CDT (America/Chicago)` |
 | `{link}` | Automations page URL (empty when `POLARIS_PUBLIC_URL` is unset) |
 | `{ack}` | this alert's acknowledge URL — **filled at delivery expansion, not at args render time; do not use it in an args template** |
 
