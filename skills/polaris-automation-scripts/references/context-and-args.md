@@ -134,7 +134,7 @@ Single-brace `{token}`. Not `{{ }}`.
 | `{asset.tags}` | tags, comma-joined — free text |
 | `{asset.connectedSwitch}` | switch/port last seen on, e.g. `FS-248E-01/port15` |
 | `{asset.connectedAp}` | AP last seen on |
-| `{asset.link}` | URL that opens the device in Polaris (empty without `POLARIS_PUBLIC_URL`) |
+| `{asset.link}` | URL that opens the device in Polaris — `<public URL>/assets/<id>`, a landing path the server resolves to the phone app or the desktop page from the browser that opens it, so a script must treat it as opaque and never rewrite it into `assets.html#…` (empty without `POLARIS_PUBLIC_URL`) |
 
 ### Event-triggered automations only
 
