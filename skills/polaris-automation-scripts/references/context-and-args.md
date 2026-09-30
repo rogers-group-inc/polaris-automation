@@ -134,6 +134,7 @@ Single-brace `{token}`. Not `{{ }}`.
 | `{asset.tags}` | tags, comma-joined — free text |
 | `{asset.connectedSwitch}` | switch/port last seen on, e.g. `FS-248E-01/port15` |
 | `{asset.connectedAp}` | AP last seen on |
+| `{asset.managedBy}` | the integration that owns the device, as the System tab's "Managed by" row words it — e.g. `FortiManager: FMG-01 → FGT-SITE-01` (a managed switch/AP names its controller FortiGate after ` → `), or `Manual` when no integration owns it; empty on an alert with no device. A display label — do not parse it for an integration id |
 | `{asset.link}` | URL that opens the device in Polaris — `<public URL>/assets/<id>`, a landing path the server resolves to the phone app or the desktop page from the browser that opens it, so a script must treat it as opaque and never rewrite it into `assets.html#…` (empty without `POLARIS_PUBLIC_URL`) |
 
 ### Event-triggered automations only
