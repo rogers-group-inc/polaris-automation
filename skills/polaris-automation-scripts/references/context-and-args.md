@@ -98,7 +98,10 @@ Single-brace `{token}`. Not `{{ }}`.
 | `{metric}` | metric / field / event action that triggered |
 | `{value}` | observed value at fire time |
 | `{threshold}` | configured threshold / comparison value |
-| `{dimension}` | sub-asset dimension — interface / mount / sensor / tunnel |
+| `{dimension}` | sub-asset dimension — interface / mount / sensor / tunnel. On an alert that names several components (one alert per device, or an alert group) it is the comma-separated, capped LIST — e.g. `port2, port5, port9 and 5 more` — so quote it as one argument, never split it yourself |
+| `{dimension.count}` | how many components the alert currently names; `1` on an alert about a single one |
+| `{dimension.first}` | the one component the alert leads with — the worst, and the one its charts are about. Use this, not `{dimension}`, when the script acts on ONE port or mount |
+| `{dimension.list}` | every component the alert names, uncapped |
 | `{conditions}` | multi-condition summary, e.g. `2 of 3 conditions met` (composite triggers only) |
 | `{trigger.summary}` | the trigger in the builder's words, with the observed value — free text |
 | `{message}` | the rendered in-app notification message — free text |
