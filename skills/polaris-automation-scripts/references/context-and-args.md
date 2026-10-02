@@ -157,9 +157,12 @@ attempt — but prefer the once-per-alert guard in recipes.md for suppressing re
 ### Not for args
 
 `{chart.cpu}`, `{chart.memory}`, `{chart.responseTime}`, `{chart.sensor}`,
-`{interface.lldp}`, `{processes.top}`, `{brand.header}` — these render inline HTML or a
+`{interface.lldp}`, `{processes.top}`, `{dependency.path}`, `{brand.header}` — these render inline HTML or a
 multi-line plain-text block for email. They will make a mess of an args string.
-(`{processes.top}` is the top-5 process table a CPU or memory alert email carries.)
+(`{processes.top}` is the top-5 process table a CPU or memory alert email carries;
+`{dependency.path}` is the dependency-down alert email's path diagram — its siblings
+`{dependency.summary}`, `{dependency.upstream}` and `{dependency.rootCause}` are plain
+strings and fine in args.)
 
 ## Turning an id into something useful
 
